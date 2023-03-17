@@ -2,7 +2,7 @@
 /**
  * main - Lowercase Alphabet
  *
- * Return: abcdefghijklmnopqrstuvwxyz 
+ * Return: abcdefghijklmnopqrstuvwxyz
  */
 int main(void)
 {
