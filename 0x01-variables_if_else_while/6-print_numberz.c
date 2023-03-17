@@ -17,6 +17,6 @@ int main(void)
 		putchar(ascii_num);
 		ascii_num++;
 	}
-	printf("\n");
+	putchar('\n');
 	return (0);
 }
