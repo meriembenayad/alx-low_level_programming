@@ -13,5 +13,5 @@ int main(void)
 		_putchar(put_var[i]);
 	_putchar('\n');
 
-	return 0;
+	return (0);
 }
