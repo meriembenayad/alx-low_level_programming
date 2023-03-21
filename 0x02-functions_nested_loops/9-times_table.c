@@ -7,18 +7,18 @@
 void times_table(void)
 {
 	int num, i, multi;
-	
+
 	for (num = 0; num <= 9; num++)
 	{
 		_putchar('0');
 
-		for (i = 0; i <= 9; i++)
+		for (i = 1; i <= 9; i++)
 		{
 			_putchar(',');
 			_putchar(' ');
 
 			multi = num * i;
-			
+
 			if (multi <= 9)
 				_putchar(' ');
 			else
