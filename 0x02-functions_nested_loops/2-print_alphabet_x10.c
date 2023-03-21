@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_alphabet - x10 in lowercase, followed by newline
+ * print_alphabet_x10 - x10 in lowercase, followed by newline
  *
  * Return: void => No return
  */
@@ -19,5 +19,5 @@ void print_alphabet_x10(void)
 		}
 		_putchar('\n');
 		rep++;
-	}	
+	}
 }
