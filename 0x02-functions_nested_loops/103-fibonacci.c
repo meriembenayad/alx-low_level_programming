@@ -8,11 +8,11 @@ int main(void)
 {
 	int i;
 	long n1, n2, temp, sum;
-
+	
 	n1 = 0;
 	n2 = 1;
-
-	while (temp < 4000000)
+	i = 0;
+	while (i < 4000000)
 	{
 		temp = n1 + n2;
 		n1 = n2;
@@ -23,6 +23,7 @@ int main(void)
 
 		if (temp % 2 == 0)
 			sum += temp;
+		i++
 	}
 	printf("%ld\n", sum);
 
