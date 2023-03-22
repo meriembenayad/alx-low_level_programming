@@ -6,24 +6,17 @@
  */
 int main(void)
 {
-	int i;
-	long n1, n2, temp, sum;
-	
-	n1 = 0;
-	n2 = 1;
-	i = 0;
-	while (i < 4000000)
+	long int fi1 = 1, fi2 = 2;
+	long int nextFi = fi1 + fi2;
+	long int sum = 2;
+
+	while (nextFi < 4e6)
 	{
-		temp = n1 + n2;
-		n1 = n2;
-		n2 = temp;
-
-		if (temp > 4000000)
-			break;
-
-		if (temp % 2 == 0)
-			sum += temp;
-		i++
+		if (nextFi % 2 == 0)
+			sum += nextFi;
+		fi1 = fi2;
+		fi2 = nextFi;
+		nextFi = fi1 + fi2;
 	}
 	printf("%ld\n", sum);
 
