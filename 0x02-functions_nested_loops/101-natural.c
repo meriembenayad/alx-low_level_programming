@@ -4,7 +4,7 @@
  *
  * Return: 0
  */
-int main()
+int main(void)
 {
 	int n, sum;
 
