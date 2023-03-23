@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - FizzBizz test
+ * main - FizzBizz test for interview
  *
  * Return: 0
  */
