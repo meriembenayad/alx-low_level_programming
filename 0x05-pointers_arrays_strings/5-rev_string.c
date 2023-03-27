@@ -14,8 +14,8 @@ void rev_string(char *s)
 		counter++;
 	for (i = 0; i < counter; i--)
 	{
-		rev = s[--i];
+		rev = s[i];
 		s[i] = s[counter];
-		s[counter++] = rev;
+		s[counter] = rev;
 	}
 }
