@@ -1,9 +1,5 @@
 #include <stdio.h>
-/**
- * main - Adding one line to change value of a[2]
- *
- * Return: void
- */
+
 int main(void)
 {
 	int n;
