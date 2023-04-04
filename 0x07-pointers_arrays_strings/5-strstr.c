@@ -1,21 +1,5 @@
 #include "main.h"
 /**
- * _strlen - function that count the length of string
- * @s: string to be calculate its length
- * Return: the length
- */
-int _strlen(char *s)
-{
-	int i = 0;
-
-	while (*s != '\0')
-	{
-		i++;
-		*s++;
-	}
-	return (i);
-}
-/**
  * *_strstr - function that locates a substring
  * @haystack: string
  * @needle: substring
@@ -23,27 +7,23 @@ int _strlen(char *s)
  */
 char *_strstr(char *haystack, char *needle)
 {
-	int needle_len = 0;
-	int first_occur = 0;
-	needle_len = _strlen(needle);
-
-	while (*haystack && *needle)
+	while (*haystack != '\0')
 	{
-		if (*haystack != *needle)
+		char *hay = haystack;
+		char *nee = needle;
+
+		while (*hay == *nee && *nee != '\0')
 		{
-			needle -= first_occur;
-			haystack -= (first_occur - 1);
-			first_occur = 0;
-			continue;
+			hay++;
+			nee++;
 		}
+
+
+		if (*nee == '\0')
+			return (haystack);
+
 		haystack++;
-		needle++;
-		first_occur++;
-		if (first_occur == needle_len)
-			break;
 	}
-	if (first_occur == needle_len)
-		return (haystack - first_occur);
 
 	return (0);
 }
