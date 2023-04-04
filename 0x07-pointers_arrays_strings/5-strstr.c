@@ -25,7 +25,6 @@ char *_strstr(char *haystack, char *needle)
 {
 	int needle_len = 0;
 	int first_occur = 0;
-
 	needle_len = _strlen(needle);
 
 	while (*haystack && *needle)
