@@ -22,10 +22,7 @@ int main(int argc, char *argv[])
 			}
 		}
 		num = atoi(argv[i]);
-		if (num > 0 || num < 0)
-		{
-			sum += num;
-		}
+		sum += num;
 	}
 
 	printf("%d\n", sum);
