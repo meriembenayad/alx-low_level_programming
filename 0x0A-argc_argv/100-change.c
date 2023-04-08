@@ -13,6 +13,8 @@ int main(int argc, char *argv[])
 	int i, cents, money = 0;
 	int coins[] = {25, 10, 5, 2, 1};
 
+	i = 0;
+	cents = 0;
 	if (argc != 2)
 	{
 		printf("Error\n");
