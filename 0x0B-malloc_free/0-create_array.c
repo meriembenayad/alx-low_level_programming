@@ -15,12 +15,9 @@ char *create_array(unsigned int size, char c)
 	{
 		return (NULL);
 	}
-	else
+	for (i = 0; i < size; size++)
 	{
-		for (i = 0; i < size; size++)
-		{
-			arr_char[i] = c;
-		}
-		return (arr_char);
+		arr_char[i] = c;
 	}
+	return (arr_char);
 }
