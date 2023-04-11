@@ -1,3 +1,4 @@
+#include "main.h"
 #include <string.h>
 /**
  * *_strdup - Duplicate string to new pointer
