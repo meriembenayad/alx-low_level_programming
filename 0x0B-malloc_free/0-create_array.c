@@ -8,6 +8,7 @@
  */
 char *create_array(unsigned int size, char c)
 {
+	unsigned i;
 	char *arr_char = malloc(size);
 
 	if (size == 0 || arr_char == 0)
@@ -16,9 +17,9 @@ char *create_array(unsigned int size, char c)
 	}
 	else
 	{
-		for (; size > 0; size--)
+		for (i = 0; i < size; size++)
 		{
-			arr_char[size] = c;
+			arr_char[i] = c;
 		}
 		return (arr_char);
 	}
