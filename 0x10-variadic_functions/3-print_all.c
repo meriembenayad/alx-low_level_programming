@@ -7,8 +7,7 @@ void print_all(const char *const format, ...)
 {
 	va_list args;
 	unsigned int i = 0;
-	char *str;
-	char *separator;
+	char *str, *separator;
 
 	va_start(args, format);
 
@@ -25,7 +24,7 @@ void print_all(const char *const format, ...)
 					printf("%s%f", separator, va_arg(args, double));
 					break;
 				case 'c':
-					printf("%c", va_arg(args, int));
+					printf("%s%c", separator, va_arg(args, int));
 					break;
 				case 's':
 					str = va_arg(args, char *);
