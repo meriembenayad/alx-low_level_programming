@@ -26,10 +26,11 @@ int main(int argc, char *argv[])
 
 	for (i = 0; i < arg1; i++)
 	{
+		printf("%02hhx", *ptr++);
 		if (arg1 != 0)
-			printf("%02hhx%s", *ptr++, " ");
+			printf("%s", " ");
 		else
-			printf("\n");
+			printf("%s", "\n");
 	}
 	return (0);
 }
