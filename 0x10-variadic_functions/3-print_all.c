@@ -1,3 +1,4 @@
+#include "variadic_functions.h"
 /**
  * print_all - Function that prints anything
  * @format: type of args
