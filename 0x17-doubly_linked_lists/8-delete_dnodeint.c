@@ -16,15 +16,18 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 
 	if (index == 0)
 	{
-		*head = curr_node->next;
-		if (curr_node->next != NULL)
-			curr_node->next->prev = NULL;
+		*head = (*head)->next;
+		if ((*head)->next != NULL)
+			(*head)->prev = NULL;
 		free(curr_node);
 		return (1);
 	}
 
 	while (i < index && curr_node != NULL)
+	{
 		curr_node = curr_node->next;
+		i++;
+	}
 
 	if (curr_node == NULL)
 		return (-1);
