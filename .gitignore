@@ -1,5 +1,3 @@
-a.out
 *.o
 *.s
-*main.c
 _putchar.c
