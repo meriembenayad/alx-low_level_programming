@@ -1,1 +1,19 @@
-#!/usr/bin/bash
+CC = gcc
+SRC = *.c
+OBJ = $(SRC:*.c=*.o)
+NAME = school
+RM = rm -f
+CFLAGS = -Wall -Werror -Wextra -pedantic
+.PHONY: all clear oclean fclean re
+all: m.h $(OBJ)
+	$(CC) $(CFLAGS) $(SRC) -o $(NAME)
+
+clear:
+	$(RM) *~ $(NAME)
+
+oclean:
+	$(RM) $(OBJ)
+
+fclean: clean oclean
+
+re: fclean all
