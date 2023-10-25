@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""  """
+""" Island Perimeter """
 
 
 def island_perimeter(grid):
@@ -7,7 +7,7 @@ def island_perimeter(grid):
         Module that returns the perimeter of the island described in grid
         water is 0 and land is 1.
         Args:
-            grid (list): list of integers 
+            grid (list): list of integers
     """
     rows = len(grid)
     cols = len(grid[0])
