@@ -4,8 +4,6 @@ For this project, we expect you to look at these concepts:
 * [C programming](https://drive.google.com/file/d/1SuhL_196MuY3ZYY_NC-k7aKJNoosQy2o/view?usp=sharing)
 * [Struggling with the sandbox? Try this: Using Docker & WSL on your local host](https://google.com)
 
-[Hello World!](https://youtu.be/co0b0xLEuRM)
-
 ### Resources
 #### Read or watch:
 
@@ -78,7 +76,7 @@ To run the Betty linter just with command ```betty <filename>```:
 * ```cd``` into the Betty directory
 * Install the linter with sudo ./install.sh
 * ```emacs``` or ```vi``` a new file called ```betty```, and copy the script below:
-```
+```bash
 #!/bin/bash
 # Simply a wrapper script to keep you from having to use betty-style
 # and betty-doc separately on every item.
@@ -115,7 +113,7 @@ Write a script that runs a C file through the preprocessor and save the result i
 - The C file name will be saved in the variable $CFILE
 - The output should be saved in the file c
 
-```
+```shell
 julien@ubuntu:~/c/0x00$ cat main.c 
 #include <stdio.h>
 
@@ -159,7 +157,7 @@ Write a script that compiles a C file but does not link.
 - The output file should be named the same as the C file, but with the extension ```.o``` instead of ```.c```.
 	- **Example:** if the C file is ```main.c```, the output file should be ```main.o```
 
-```
+```shell
 julien@ubuntu:~/c/0x00$ export CFILE=main.c
 julien@ubuntu:~/c/0x00$ cat main.c
 #include <stdio.h>
@@ -197,7 +195,7 @@ Write a script that generates the assembly code of a C code and save it in an ou
 - The output file should be named the same as the C file, but with the extension ```.s``` instead of ```.c```.
 	- **Example:** if the C file is ```main.c```, the output file should be ```main.s```
 
-```
+```shell
 julien@ubuntu:~/c/0x00$ export CFILE=main.c
 julien@ubuntu:~/c/0x00$ cat main.c
 #include <stdio.h>
@@ -252,7 +250,7 @@ Write a script that compiles a C file and creates an executable named ```cisfun`
 
 - The C file name will be saved in the variable ```$CFILE```
 
-```
+```shell
 julien@ubuntu:~/c/0x00$ export CFILE=main.c
 julien@ubuntu:~/c/0x00$ cat main.c
 #include <stdio.h>
@@ -289,7 +287,7 @@ Write a C program that prints exactly ```"Programming is like building a multili
 - You are not allowed to use ```printf```
 - Your program should end with the value ```0```
 
-```
+```shell
 julien@ubuntu:~/c/0x00$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 4-puts.c && ./a.out
 "Programming is like building a multilingual puzzle
 julien@ubuntu:~/c/0x00$ echo $?
@@ -314,7 +312,7 @@ Write a C program that prints exactly ```with proper grammar, but the outcome is
 - Your program should return ```0```
 - Your program should compile without warning when using the ```-Wall``` ```gcc``` option
 
-```
+```shell
 julien@ubuntu:~/c/0x00$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 5-printf.c
 julien@ubuntu:~/c/0x00$ ./a.out 
 with proper grammar, but the outcome is a piece of art,
@@ -340,7 +338,7 @@ Write a C program that prints the size of various types on the computer it is co
 - Your program should return ```0```
 - You might have to install the package ```libc6-dev-i386``` on your Linux to test the ```-m32``` ```gcc``` option
 
-```
+```shell
 julien@ubuntu:~/c/0x00$ gcc 6-size.c -m32 -o size32 2> /tmp/32
 julien@ubuntu:~/c/0x00$ gcc 6-size.c -m64 -o size64 2> /tmp/64
 julien@ubuntu:~/c/0x00$ ./size32
@@ -376,7 +374,7 @@ Write a script that generates the assembly code (Intel syntax) of a C code and s
 - The output file should be named the same as the C file, but with the extension ```.s``` instead of ```.c```.
 	- Example: if the C file is ```main.c```, the output file should be ```main.s```
 
-```
+```shell
 julien@ubuntu:~/c/0x00$ export CFILE=main.c
 julien@ubuntu:~/c/0x00$ cat main.c
 #include <stdio.h>
@@ -433,7 +431,7 @@ Write a C program that prints exactly ```and that piece of art is useful" - Dora
 - Your program should return ```1```
 - Your program should compile without any warnings when using the ```-Wall``` ```gcc``` option
 
-```
+```shell
 julien@ubuntu:~/c/0x00$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -o quote 101-quote.c
 julien@ubuntu:~/c/0x00$ ./quote
 and that piece of art is useful" - Dora Korpar, 2015-10-19
