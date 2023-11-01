@@ -98,16 +98,6 @@ carrie@ubuntu:/debugging$
 </details>
 
 <details>
-<summary></summary>
-
-***
-**Repo:**
-- GitHub repository: ```alx-low_level_programming```
-- Directory: ```0x03-debugging```
-- File: ```0-main.c, main.h```
-</details>
-
-<details>
 <summary>1. Like, comment, subscribe</summary>
 
 Copy this main file. Comment out (don’t delete it!) the part of the code that is causing the output to go into an infinite loop.
