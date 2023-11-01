@@ -352,7 +352,7 @@ julien@ubuntu:~/0x05$
 
 
 <details>
-<summary>Arrays are not pointers</summary>
+<summary>8. Arrays are not pointers</summary>
 
 Write a function that prints ```n``` elements of an array of integers, followed by a new line.
 - Prototype: ```void print_array(int *a, int n);```
