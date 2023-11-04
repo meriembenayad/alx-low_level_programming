@@ -145,7 +145,7 @@ julien@ubuntu:~/0x18. Dynamic libraries$
 - GitHub repository: ```alx-low_level_programming```
 - Directory: ```0x18-dynamic_libraries```
 - File: ```libdynamic.so, main.h```
-<details>
+</details>
 
 <details>
 <summary>1. Without libraries what have we? We have no past and no future</summary>
@@ -190,7 +190,7 @@ julien@ubuntu:~/0x18. Dynamic libraries$
 - GitHub repository: ```alx-low_level_programming```
 - Directory: ```0x18-dynamic_libraries```
 - File: ```1-create_dynamic_lib.sh```
-<details>
+</details>
 
 <details>
 <summary>2. Let's call C functions from Python</summary>
@@ -243,7 +243,7 @@ julien@ubuntu:~/0x18$
 - GitHub repository: ```alx-low_level_programming```
 - Directory: ```0x18-dynamic_libraries```
 - File: ```100-operations.so```
-<details>
+</details>
 
 <details>
 <summary>3. Code injection: Win the Giga Millions!</summary>
@@ -296,4 +296,4 @@ mss@gm_server$ exit
 - GitHub repository: ```alx-low_level_programming```
 - Directory: ```0x18-dynamic_libraries```
 - File: ```101-make_me_win.sh```
-<details>
+</details>
